@@ -8,6 +8,12 @@
 
 import Foundation
 import XcodeKit
+//import AppKit
+
+enum CommandError: Error {
+  case noSelection
+  case noMoreMatch
+}
 
 class SourceEditorCommand: NSObject, XCSourceEditorCommand {
 
@@ -23,7 +29,7 @@ class SourceEditorCommand: NSObject, XCSourceEditorCommand {
     // Get selectedString
     let selectedString = invocation.buffer.string(in: firstSelection)
     guard !selectedString.isEmpty else { return }
-    print("SourceEditorCommand \(invocation.commandIdentifier)", "selectedString:", selectedString)
+//    print("SourceEditorCommand", "selected:", selectedString)
 
     // Discard unmatched selections
     for i in (0..<invocation.buffer.selections.count).reversed() {
@@ -39,11 +45,12 @@ class SourceEditorCommand: NSObject, XCSourceEditorCommand {
     // Find next selection of the same string after lastSelection
     if let nextRange = invocation.buffer.range(of: selectedString, after: lastSelection.end) {
       // Add that next selection
-      print("SourceEditorCommand \(invocation.commandIdentifier)", "nextRange:", nextRange)
+      print("SourceEditorCommand", "nextRange:", nextRange)
       invocation.buffer.selections.add(nextRange)
     }
     else {
-      print("SourceEditorCommand \(invocation.commandIdentifier)", "nextRange: not found")
+//      NSSound.beep()
+      print("SourceEditorCommand", "nextRange:", "not found")
     }
 
     // Done!

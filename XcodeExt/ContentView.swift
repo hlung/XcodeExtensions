@@ -10,16 +10,20 @@ import SwiftUI
 
 struct ContentView: View {
   var body: some View {
-    Text(
-      """
-      Xcode Extension is installed!
+    VStack(spacing: 0) {
+      Text(
+        """
+        Xcode Extension is installed!
 
-      To use, go to Xcode, select Editor > Expand Selection.
+        To use, go to Xcode, select Editor > Expand Selection.
 
-      To uninstall, go to System Preferences > Extension > 'Xcode Source Editor'.
-      """)
-      .multilineTextAlignment(.center)
-      .frame(maxWidth: .infinity, maxHeight: .infinity)
+        To uninstall, go to System Preferences > Extension > 'Xcode Source Editor'.
+        """)
+        .multilineTextAlignment(.center)
+        .frame(maxWidth: .infinity, maxHeight: .infinity)
+      Button("Close", action: { exit(0) })
+        .padding(.bottom, 40)
+    }
   }
 }
 

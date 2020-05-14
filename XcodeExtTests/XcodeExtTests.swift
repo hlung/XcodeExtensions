@@ -7,8 +7,8 @@
 //
 
 import XCTest
-//@testable import XcodeExt
-@testable import ExpandSelection
+@testable import XcodeExt
+//@testable import ExpandSelection
 
 class XcodeExtTests: XCTestCase {
 
