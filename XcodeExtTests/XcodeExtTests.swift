@@ -7,8 +7,7 @@
 //
 
 import XCTest
-//import XcodeKit
-@testable import XcodeExt
+//@testable import XcodeExt
 @testable import ExpandSelection
 
 class XcodeExtTests: XCTestCase {
@@ -22,7 +21,8 @@ class XcodeExtTests: XCTestCase {
   }
 
   func test_buffer() throws {
-    let buffer = XCSourceTextBuffer()
+//    let array = ["hello", "world"]
+//    let string = array.string(in: Range(start: Position(0, 0), end: Position(0, 1)))
   }
 
 //  func testPerformanceExample() throws {

@@ -16,7 +16,7 @@
 		018B6EE2246D8C0800B49047 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 018B6EE1246D8C0800B49047 /* Cocoa.framework */; };
 		018B6EE5246D8C0800B49047 /* SourceEditorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 018B6EE4246D8C0800B49047 /* SourceEditorExtension.swift */; };
 		018B6EE7246D8C0800B49047 /* SourceEditorCommand.swift in Sources */ = {isa = PBXBuildFile; fileRef = 018B6EE6246D8C0800B49047 /* SourceEditorCommand.swift */; };
-		018B6EEC246D8C0800B49047 /* ExpandSelection.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 018B6EDF246D8C0800B49047 /* ExpandSelection.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		018B6EEC246D8C0800B49047 /* Expand Selection.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 018B6EDF246D8C0800B49047 /* Expand Selection.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,7 +43,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 13;
 			files = (
-				018B6EEC246D8C0800B49047 /* ExpandSelection.appex in Embed App Extensions */,
+				018B6EEC246D8C0800B49047 /* Expand Selection.appex in Embed App Extensions */,
 			);
 			name = "Embed App Extensions";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -62,7 +62,7 @@
 		018B6ECC246D8BF000B49047 /* XcodeExtTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = XcodeExtTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		018B6ED0246D8BF000B49047 /* XcodeExtTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XcodeExtTests.swift; sourceTree = "<group>"; };
 		018B6ED2246D8BF000B49047 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		018B6EDF246D8C0800B49047 /* ExpandSelection.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = ExpandSelection.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		018B6EDF246D8C0800B49047 /* Expand Selection.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Expand Selection.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
 		018B6EE1246D8C0800B49047 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		018B6EE4246D8C0800B49047 /* SourceEditorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SourceEditorExtension.swift; sourceTree = "<group>"; };
 		018B6EE6246D8C0800B49047 /* SourceEditorCommand.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SourceEditorCommand.swift; sourceTree = "<group>"; };
@@ -112,7 +112,7 @@
 			children = (
 				018B6EB7246D8BEE00B49047 /* XcodeExt.app */,
 				018B6ECC246D8BF000B49047 /* XcodeExtTests.xctest */,
-				018B6EDF246D8C0800B49047 /* ExpandSelection.appex */,
+				018B6EDF246D8C0800B49047 /* Expand Selection.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -207,9 +207,9 @@
 			productReference = 018B6ECC246D8BF000B49047 /* XcodeExtTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		018B6EDE246D8C0800B49047 /* ExpandSelection */ = {
+		018B6EDE246D8C0800B49047 /* Expand Selection */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 018B6EED246D8C0800B49047 /* Build configuration list for PBXNativeTarget "ExpandSelection" */;
+			buildConfigurationList = 018B6EED246D8C0800B49047 /* Build configuration list for PBXNativeTarget "Expand Selection" */;
 			buildPhases = (
 				018B6EDB246D8C0800B49047 /* Sources */,
 				018B6EDC246D8C0800B49047 /* Frameworks */,
@@ -219,9 +219,9 @@
 			);
 			dependencies = (
 			);
-			name = ExpandSelection;
+			name = "Expand Selection";
 			productName = ExpandSelection;
-			productReference = 018B6EDF246D8C0800B49047 /* ExpandSelection.appex */;
+			productReference = 018B6EDF246D8C0800B49047 /* Expand Selection.appex */;
 			productType = "com.apple.product-type.xcode-extension";
 		};
 /* End PBXNativeTarget section */
@@ -261,7 +261,7 @@
 			targets = (
 				018B6EB6246D8BEE00B49047 /* XcodeExt */,
 				018B6ECB246D8BF000B49047 /* XcodeExtTests */,
-				018B6EDE246D8C0800B49047 /* ExpandSelection */,
+				018B6EDE246D8C0800B49047 /* Expand Selection */,
 			);
 		};
 /* End PBXProject section */
@@ -330,7 +330,7 @@
 		};
 		018B6EEB246D8C0800B49047 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 018B6EDE246D8C0800B49047 /* ExpandSelection */;
+			target = 018B6EDE246D8C0800B49047 /* Expand Selection */;
 			targetProxy = 018B6EEA246D8C0800B49047 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -514,7 +514,7 @@
 				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = LX422HV3Y6;
 				INFOPLIST_FILE = XcodeExtTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -537,7 +537,7 @@
 				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = LX422HV3Y6;
 				INFOPLIST_FILE = XcodeExtTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -622,7 +622,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		018B6EED246D8C0800B49047 /* Build configuration list for PBXNativeTarget "ExpandSelection" */ = {
+		018B6EED246D8C0800B49047 /* Build configuration list for PBXNativeTarget "Expand Selection" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				018B6EEE246D8C0800B49047 /* Debug */,

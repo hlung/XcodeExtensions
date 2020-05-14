@@ -9,11 +9,6 @@
 import Foundation
 import XcodeKit
 
-// First thing first. Shorten these long names...
-typealias Range = XCSourceTextRange
-typealias Position = XCSourceTextPosition
-typealias Buffer = XCSourceTextBuffer
-
 class SourceEditorCommand: NSObject, XCSourceEditorCommand {
 
   func perform(with invocation: XCSourceEditorCommandInvocation,
@@ -22,33 +17,37 @@ class SourceEditorCommand: NSObject, XCSourceEditorCommand {
     defer { completionHandler(nil) }
 
     // At least something is selected
-    guard let selection = invocation.buffer.selections.firstObject as? Range else { return }
+    guard let firstSelection = invocation.buffer.selections.firstObject as? XCSourceTextRange else { return }
 //    print(invocation.buffer.string(in: firstSelection))
 
-    // Discard other selections in the buffer
-    invocation.buffer.selections.removeAllObjects()
-//    invocation.buffer.selections.add(Range(start: Position(0, 0), end: Position(0, 1)))
-//    invocation.buffer.selections.add(Range(start: Position(1, 0), end: Position(1, 1)))
-
     // Get selectedString
-    let selectedString = invocation.buffer.string(in: selection)
+    let selectedString = invocation.buffer.string(in: firstSelection)
     guard !selectedString.isEmpty else { return }
+    print("SourceEditorCommand \(invocation.commandIdentifier)", "selectedString:", selectedString)
 
-    print("selectedString:", selectedString)
+    // Discard unmatched selections
+    for i in (0..<invocation.buffer.selections.count).reversed() {
+      let selection = invocation.buffer.selections[i] as! XCSourceTextRange
+      let str = invocation.buffer.string(in: selection)
+      if str != selectedString {
+        invocation.buffer.selections.removeObject(at: i)
+      }
+    }
 
-    // Find next selection of the same string
-    if let nextRange = invocation.buffer.range(of: selectedString, after: selection.end) {
+    guard let lastSelection = invocation.buffer.selections.lastObject as? XCSourceTextRange else { return }
+
+    // Find next selection of the same string after lastSelection
+    if let nextRange = invocation.buffer.range(of: selectedString, after: lastSelection.end) {
       // Add that next selection
-      print("nextRange:", nextRange)
+      print("SourceEditorCommand \(invocation.commandIdentifier)", "nextRange:", nextRange)
       invocation.buffer.selections.add(nextRange)
     }
     else {
-      print("nextRange: not found")
+      print("SourceEditorCommand \(invocation.commandIdentifier)", "nextRange: not found")
     }
 
     // Done!
 
-    // expr in Range(start: Position(line: 0, column: 0), end: Position(line: 0, column: 1))
 //    sort(invocation.buffer.lines, in: firstSelection.start.line...lastSelection.end.line, by: <)
 //    sort(invocation.buffer.lines, in: firstSelection.start.line...lastSelection.end.line, by: isLessThanIgnoringLeadingWhitespacesAndTabs)
   }
@@ -68,7 +67,7 @@ class SourceEditorCommand: NSObject, XCSourceEditorCommand {
 
 }
 
-extension Position {
+private extension XCSourceTextPosition {
   init(_ line: Int, _ column: Int) {
     self.init()
     self.line = line
@@ -76,27 +75,50 @@ extension Position {
   }
 }
 
-extension Buffer {
-  func string(in range: Range) -> String {
+private extension XCSourceTextBuffer {
+  var linesAsString: [String] { lines as! [String] }
+
+  func string(in range: XCSourceTextRange) -> String {
+    linesAsString.string(in: range)
+  }
+
+  func range(of string: String, after startPosition: XCSourceTextPosition) -> XCSourceTextRange? {
+    linesAsString.range(of: string, after: startPosition)
+  }
+
+  var linesLastPosition: XCSourceTextPosition {
+    linesAsString.linesLastPosition
+  }
+}
+
+private extension Array where Element == String {
+  func string(in range: XCSourceTextRange) -> String {
     // Only support one line for now
-    let string = lines[range.start.line] as! String
+    let string = self[range.start.line]
     let begin = string.index(string.startIndex, offsetBy: range.start.column)
     let end = string.index(string.startIndex, offsetBy: range.end.column)
     return String(string[begin..<end])
   }
 
-  func range(of string: String, after startPosition: Position) -> Range? {
+  func range(of string: String, after startPosition: XCSourceTextPosition) -> XCSourceTextRange? {
+    var startOffset = startPosition.column
     for line in startPosition.line...linesLastPosition.line {
-      let string = lines[line] as? String ?? ""
-      if let range = string.range(of: string) {
-        return Range(start: Position(line, range.lowerBound.utf16Offset(in: string)),
-                     end: Position(line, range.upperBound.utf16Offset(in: string)))
+      let lineString = self[line]
+      if let range = lineString.range(of: string,
+                                      options: .caseInsensitive,
+                                      range: lineString.index(lineString.startIndex, offsetBy: startOffset)..<lineString.endIndex,
+                                      locale: nil) {
+        return XCSourceTextRange(start: XCSourceTextPosition(line, range.lowerBound.utf16Offset(in: lineString)),
+                     end: XCSourceTextPosition(line, range.upperBound.utf16Offset(in: lineString)))
       }
+      startOffset = 0
     }
     return nil
   }
 
-  var linesLastPosition: Position {
-    Position(max(0, lines.count - 1), (lines.lastObject as? String)?.count ?? 0)
+  var linesLastPosition: XCSourceTextPosition {
+    let line = count > 0 ? count - 1 : 0
+    return XCSourceTextPosition(line, last?.count ?? 0)
   }
 }
+

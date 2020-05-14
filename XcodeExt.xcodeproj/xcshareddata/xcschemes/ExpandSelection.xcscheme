@@ -16,8 +16,8 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "018B6EDE246D8C0800B49047"
-               BuildableName = "ExpandSelection.appex"
-               BlueprintName = "ExpandSelection"
+               BuildableName = "Expand Selection.appex"
+               BlueprintName = "Expand Selection"
                ReferencedContainer = "container:XcodeExt.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
