@@ -18,7 +18,7 @@
                BlueprintIdentifier = "018B6EDE246D8C0800B49047"
                BuildableName = "Expand Selection.appex"
                BlueprintName = "Expand Selection"
-               ReferencedContainer = "container:XcodeExt.xcodeproj">
+               ReferencedContainer = "container:XCExtension.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
          <BuildActionEntry
@@ -30,9 +30,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "018B6EB6246D8BEE00B49047"
-               BuildableName = "XcodeExt.app"
-               BlueprintName = "XcodeExt"
-               ReferencedContainer = "container:XcodeExt.xcodeproj">
+               BuildableName = "XCExtension.app"
+               BlueprintName = "XCExtension"
+               ReferencedContainer = "container:XCExtension.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -48,9 +48,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "018B6ECB246D8BF000B49047"
-               BuildableName = "XcodeExtTests.xctest"
-               BlueprintName = "XcodeExtTests"
-               ReferencedContainer = "container:XcodeExt.xcodeproj">
+               BuildableName = "XCExtensionTests.xctest"
+               BlueprintName = "XCExtensionTests"
+               ReferencedContainer = "container:XCExtension.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
@@ -76,9 +76,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "018B6EB6246D8BEE00B49047"
-            BuildableName = "XcodeExt.app"
-            BlueprintName = "XcodeExt"
-            ReferencedContainer = "container:XcodeExt.xcodeproj">
+            BuildableName = "XCExtension.app"
+            BlueprintName = "XCExtension"
+            ReferencedContainer = "container:XCExtension.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
    </LaunchAction>
@@ -94,9 +94,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "018B6EB6246D8BEE00B49047"
-            BuildableName = "XcodeExt.app"
-            BlueprintName = "XcodeExt"
-            ReferencedContainer = "container:XcodeExt.xcodeproj">
+            BuildableName = "XCExtension.app"
+            BlueprintName = "XCExtension"
+            ReferencedContainer = "container:XCExtension.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

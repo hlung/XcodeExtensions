@@ -1,16 +1,16 @@
 //
-//  XcodeExtTests.swift
-//  XcodeExtTests
+//  XCExtensionTests.swift
+//  XCExtensionTests
 //
 //  Created by Kolyutsakul, Thongchai on 14/5/20.
 //  Copyright © 2020 Thongchai Kolyutsakul. All rights reserved.
 //
 
 import XCTest
-@testable import XcodeExt
+@testable import XCExtension
 //@testable import ExpandSelection
 
-class XcodeExtTests: XCTestCase {
+class XCExtensionTests: XCTestCase {
 
   override func setUpWithError() throws {
     // Put setup code here. This method is called before the invocation of each test method in the class.

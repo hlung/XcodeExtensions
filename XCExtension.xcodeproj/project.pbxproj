@@ -12,7 +12,7 @@
 		018B6EBF246D8BF000B49047 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 018B6EBE246D8BF000B49047 /* Assets.xcassets */; };
 		018B6EC2246D8BF000B49047 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 018B6EC1246D8BF000B49047 /* Preview Assets.xcassets */; };
 		018B6EC5246D8BF000B49047 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 018B6EC3246D8BF000B49047 /* Main.storyboard */; };
-		018B6ED1246D8BF000B49047 /* XcodeExtTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 018B6ED0246D8BF000B49047 /* XcodeExtTests.swift */; };
+		018B6ED1246D8BF000B49047 /* XCExtensionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 018B6ED0246D8BF000B49047 /* XCExtensionTests.swift */; };
 		018B6EE2246D8C0800B49047 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 018B6EE1246D8C0800B49047 /* Cocoa.framework */; };
 		018B6EE5246D8C0800B49047 /* SourceEditorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 018B6EE4246D8C0800B49047 /* SourceEditorExtension.swift */; };
 		018B6EE7246D8C0800B49047 /* SourceEditorCommand.swift in Sources */ = {isa = PBXBuildFile; fileRef = 018B6EE6246D8C0800B49047 /* SourceEditorCommand.swift */; };
@@ -51,16 +51,16 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		018B6EB7246D8BEE00B49047 /* XcodeExt.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = XcodeExt.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		018B6EB7246D8BEE00B49047 /* XCExtension.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = XCExtension.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		018B6EBA246D8BEE00B49047 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		018B6EBC246D8BEE00B49047 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		018B6EBE246D8BF000B49047 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		018B6EC1246D8BF000B49047 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		018B6EC4246D8BF000B49047 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		018B6EC6246D8BF000B49047 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		018B6EC7246D8BF000B49047 /* XcodeExt.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = XcodeExt.entitlements; sourceTree = "<group>"; };
-		018B6ECC246D8BF000B49047 /* XcodeExtTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = XcodeExtTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		018B6ED0246D8BF000B49047 /* XcodeExtTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XcodeExtTests.swift; sourceTree = "<group>"; };
+		018B6EC7246D8BF000B49047 /* XCExtension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = XCExtension.entitlements; sourceTree = "<group>"; };
+		018B6ECC246D8BF000B49047 /* XCExtensionTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = XCExtensionTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		018B6ED0246D8BF000B49047 /* XCExtensionTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XCExtensionTests.swift; sourceTree = "<group>"; };
 		018B6ED2246D8BF000B49047 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		018B6EDF246D8C0800B49047 /* Expand Selection.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Expand Selection.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
 		018B6EE1246D8C0800B49047 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
@@ -99,8 +99,8 @@
 		018B6EAE246D8BEE00B49047 = {
 			isa = PBXGroup;
 			children = (
-				018B6EB9246D8BEE00B49047 /* XcodeExt */,
-				018B6ECF246D8BF000B49047 /* XcodeExtTests */,
+				018B6EB9246D8BEE00B49047 /* XCExtension */,
+				018B6ECF246D8BF000B49047 /* XCExtensionTests */,
 				018B6EE3246D8C0800B49047 /* ExpandSelection */,
 				018B6EE0246D8C0800B49047 /* Frameworks */,
 				018B6EB8246D8BEE00B49047 /* Products */,
@@ -110,14 +110,14 @@
 		018B6EB8246D8BEE00B49047 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				018B6EB7246D8BEE00B49047 /* XcodeExt.app */,
-				018B6ECC246D8BF000B49047 /* XcodeExtTests.xctest */,
+				018B6EB7246D8BEE00B49047 /* XCExtension.app */,
+				018B6ECC246D8BF000B49047 /* XCExtensionTests.xctest */,
 				018B6EDF246D8C0800B49047 /* Expand Selection.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		018B6EB9246D8BEE00B49047 /* XcodeExt */ = {
+		018B6EB9246D8BEE00B49047 /* XCExtension */ = {
 			isa = PBXGroup;
 			children = (
 				018B6EBA246D8BEE00B49047 /* AppDelegate.swift */,
@@ -125,10 +125,10 @@
 				018B6EBE246D8BF000B49047 /* Assets.xcassets */,
 				018B6EC3246D8BF000B49047 /* Main.storyboard */,
 				018B6EC6246D8BF000B49047 /* Info.plist */,
-				018B6EC7246D8BF000B49047 /* XcodeExt.entitlements */,
+				018B6EC7246D8BF000B49047 /* XCExtension.entitlements */,
 				018B6EC0246D8BF000B49047 /* Preview Content */,
 			);
-			path = XcodeExt;
+			path = XCExtension;
 			sourceTree = "<group>";
 		};
 		018B6EC0246D8BF000B49047 /* Preview Content */ = {
@@ -139,13 +139,13 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
-		018B6ECF246D8BF000B49047 /* XcodeExtTests */ = {
+		018B6ECF246D8BF000B49047 /* XCExtensionTests */ = {
 			isa = PBXGroup;
 			children = (
-				018B6ED0246D8BF000B49047 /* XcodeExtTests.swift */,
+				018B6ED0246D8BF000B49047 /* XCExtensionTests.swift */,
 				018B6ED2246D8BF000B49047 /* Info.plist */,
 			);
-			path = XcodeExtTests;
+			path = XCExtensionTests;
 			sourceTree = "<group>";
 		};
 		018B6EE0246D8C0800B49047 /* Frameworks */ = {
@@ -170,9 +170,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		018B6EB6246D8BEE00B49047 /* XcodeExt */ = {
+		018B6EB6246D8BEE00B49047 /* XCExtension */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 018B6ED5246D8BF000B49047 /* Build configuration list for PBXNativeTarget "XcodeExt" */;
+			buildConfigurationList = 018B6ED5246D8BF000B49047 /* Build configuration list for PBXNativeTarget "XCExtension" */;
 			buildPhases = (
 				018B6EB3246D8BEE00B49047 /* Sources */,
 				018B6EB4246D8BEE00B49047 /* Frameworks */,
@@ -184,14 +184,14 @@
 			dependencies = (
 				018B6EEB246D8C0800B49047 /* PBXTargetDependency */,
 			);
-			name = XcodeExt;
+			name = XCExtension;
 			productName = XcodeExt;
-			productReference = 018B6EB7246D8BEE00B49047 /* XcodeExt.app */;
+			productReference = 018B6EB7246D8BEE00B49047 /* XCExtension.app */;
 			productType = "com.apple.product-type.application";
 		};
-		018B6ECB246D8BF000B49047 /* XcodeExtTests */ = {
+		018B6ECB246D8BF000B49047 /* XCExtensionTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 018B6ED8246D8BF000B49047 /* Build configuration list for PBXNativeTarget "XcodeExtTests" */;
+			buildConfigurationList = 018B6ED8246D8BF000B49047 /* Build configuration list for PBXNativeTarget "XCExtensionTests" */;
 			buildPhases = (
 				018B6EC8246D8BF000B49047 /* Sources */,
 				018B6EC9246D8BF000B49047 /* Frameworks */,
@@ -202,9 +202,9 @@
 			dependencies = (
 				018B6ECE246D8BF000B49047 /* PBXTargetDependency */,
 			);
-			name = XcodeExtTests;
+			name = XCExtensionTests;
 			productName = XcodeExtTests;
-			productReference = 018B6ECC246D8BF000B49047 /* XcodeExtTests.xctest */;
+			productReference = 018B6ECC246D8BF000B49047 /* XCExtensionTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 		018B6EDE246D8C0800B49047 /* Expand Selection */ = {
@@ -246,7 +246,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 018B6EB2246D8BEE00B49047 /* Build configuration list for PBXProject "XcodeExt" */;
+			buildConfigurationList = 018B6EB2246D8BEE00B49047 /* Build configuration list for PBXProject "XCExtension" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -259,8 +259,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				018B6EB6246D8BEE00B49047 /* XcodeExt */,
-				018B6ECB246D8BF000B49047 /* XcodeExtTests */,
+				018B6EB6246D8BEE00B49047 /* XCExtension */,
+				018B6ECB246D8BF000B49047 /* XCExtensionTests */,
 				018B6EDE246D8C0800B49047 /* Expand Selection */,
 			);
 		};
@@ -307,7 +307,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				018B6ED1246D8BF000B49047 /* XcodeExtTests.swift in Sources */,
+				018B6ED1246D8BF000B49047 /* XCExtensionTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -325,7 +325,7 @@
 /* Begin PBXTargetDependency section */
 		018B6ECE246D8BF000B49047 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 018B6EB6246D8BEE00B49047 /* XcodeExt */;
+			target = 018B6EB6246D8BEE00B49047 /* XCExtension */;
 			targetProxy = 018B6ECD246D8BF000B49047 /* PBXContainerItemProxy */;
 		};
 		018B6EEB246D8C0800B49047 /* PBXTargetDependency */ = {
@@ -465,19 +465,19 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_ENTITLEMENTS = XcodeExt/XcodeExt.entitlements;
+				CODE_SIGN_ENTITLEMENTS = XCExtension/XCExtension.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				DEVELOPMENT_ASSET_PATHS = "\"XcodeExt/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"XCExtension/Preview Content\"";
 				DEVELOPMENT_TEAM = LX422HV3Y6;
 				ENABLE_PREVIEWS = YES;
-				INFOPLIST_FILE = XcodeExt/Info.plist;
+				INFOPLIST_FILE = XCExtension/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
 				MACOSX_DEPLOYMENT_TARGET = 10.15;
-				PRODUCT_BUNDLE_IDENTIFIER = com.hlung.xcextension;
+				PRODUCT_BUNDLE_IDENTIFIER = com.hlung.XCExtension;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 			};
@@ -488,19 +488,19 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_ENTITLEMENTS = XcodeExt/XcodeExt.entitlements;
+				CODE_SIGN_ENTITLEMENTS = XCExtension/XCExtension.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				DEVELOPMENT_ASSET_PATHS = "\"XcodeExt/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"XCExtension/Preview Content\"";
 				DEVELOPMENT_TEAM = LX422HV3Y6;
 				ENABLE_PREVIEWS = YES;
-				INFOPLIST_FILE = XcodeExt/Info.plist;
+				INFOPLIST_FILE = XCExtension/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
 				MACOSX_DEPLOYMENT_TARGET = 10.15;
-				PRODUCT_BUNDLE_IDENTIFIER = com.hlung.xcextension;
+				PRODUCT_BUNDLE_IDENTIFIER = com.hlung.XCExtension;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 			};
@@ -515,17 +515,17 @@
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = LX422HV3Y6;
-				INFOPLIST_FILE = XcodeExtTests/Info.plist;
+				INFOPLIST_FILE = XCExtensionTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 					"@loader_path/../Frameworks",
 				);
 				MACOSX_DEPLOYMENT_TARGET = 10.15;
-				PRODUCT_BUNDLE_IDENTIFIER = com.thongchai.XcodeExtTests;
+				PRODUCT_BUNDLE_IDENTIFIER = com.hlung.XCExtensionTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/XcodeExt.app/Contents/MacOS/XcodeExt";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/XCExtension.app/Contents/MacOS/XCExtension";
 			};
 			name = Debug;
 		};
@@ -538,17 +538,17 @@
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = LX422HV3Y6;
-				INFOPLIST_FILE = XcodeExtTests/Info.plist;
+				INFOPLIST_FILE = XCExtensionTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 					"@loader_path/../Frameworks",
 				);
 				MACOSX_DEPLOYMENT_TARGET = 10.15;
-				PRODUCT_BUNDLE_IDENTIFIER = com.thongchai.XcodeExtTests;
+				PRODUCT_BUNDLE_IDENTIFIER = com.hlung.XCExtensionTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/XcodeExt.app/Contents/MacOS/XcodeExt";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/XCExtension.app/Contents/MacOS/XCExtension";
 			};
 			name = Release;
 		};
@@ -565,7 +565,7 @@
 					"@executable_path/../Frameworks",
 					"@executable_path/../../../../Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.thongchai.XcodeExt.ExpandSelection;
+				PRODUCT_BUNDLE_IDENTIFIER = com.hlung.XCExtension.ExpandSelection;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 5.0;
@@ -585,7 +585,7 @@
 					"@executable_path/../Frameworks",
 					"@executable_path/../../../../Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.thongchai.XcodeExt.ExpandSelection;
+				PRODUCT_BUNDLE_IDENTIFIER = com.hlung.XCExtension.ExpandSelection;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 5.0;
@@ -595,7 +595,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		018B6EB2246D8BEE00B49047 /* Build configuration list for PBXProject "XcodeExt" */ = {
+		018B6EB2246D8BEE00B49047 /* Build configuration list for PBXProject "XCExtension" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				018B6ED3246D8BF000B49047 /* Debug */,
@@ -604,7 +604,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		018B6ED5246D8BF000B49047 /* Build configuration list for PBXNativeTarget "XcodeExt" */ = {
+		018B6ED5246D8BF000B49047 /* Build configuration list for PBXNativeTarget "XCExtension" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				018B6ED6246D8BF000B49047 /* Debug */,
@@ -613,7 +613,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		018B6ED8246D8BF000B49047 /* Build configuration list for PBXNativeTarget "XcodeExtTests" */ = {
+		018B6ED8246D8BF000B49047 /* Build configuration list for PBXNativeTarget "XCExtensionTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				018B6ED9246D8BF000B49047 /* Debug */,

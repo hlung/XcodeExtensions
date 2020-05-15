@@ -1,6 +1,6 @@
 //
 //  ContentView.swift
-//  XcodeExt
+//  XCExtension
 //
 //  Created by Kolyutsakul, Thongchai on 14/5/20.
 //  Copyright © 2020 Thongchai Kolyutsakul. All rights reserved.
@@ -26,7 +26,6 @@ struct ContentView: View {
     }
   }
 }
-
 
 struct ContentView_Previews: PreviewProvider {
   static var previews: some View {
