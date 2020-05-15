@@ -7,7 +7,7 @@
 - Open Xcode, open some .swift file
 - The command should appear at the bottom of Editor menu
 
-To uninstall, go to System Preferences > Extension > Xcode Source Editor. Drag the extension into the bin.
+To manage extensions, go to System Preferences > Extension > Xcode Source Editor
 
 ## Commands
 
