@@ -8,6 +8,7 @@
 
 import Foundation
 import XcodeKit
+import AppKit
 
 enum CommandError: Error {
   case noSelection
@@ -48,7 +49,7 @@ class SourceEditorCommand: NSObject, XCSourceEditorCommand {
       invocation.buffer.selections.add(nextRange)
     }
     else {
-//      NSSound.beep()
+      NSSound.beep()
       print("SourceEditorCommand", "nextRange:", "not found")
     }
 
