@@ -19,7 +19,7 @@ This is the same feature as Sublime Text's `Selection > Expand Selection to Word
 
 ![demo](README/demo-expand-selection.gif)
 
-#### Limitation
+#### Limitations
 
 - Not yet working with a selection that spans across multiple lines.
 - Not yet support searching back at beginning after reaching end of file.
