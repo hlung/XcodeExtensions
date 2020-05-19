@@ -2,7 +2,7 @@
 
 ## Installation
 
-- Download the .app in [releases](https://github.com/hlung/XcodeExtensions/releases) page (or build from source code if you don't trust me :P)
+- Download .app file in [releases](https://github.com/hlung/XcodeExtensions/releases) page (or build from source code if you don't trust me :P)
 - Run the app once, then close it
 - Open Xcode, open some .swift file
 - The command should appear at the bottom of Editor menu
