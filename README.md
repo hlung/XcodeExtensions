@@ -19,6 +19,8 @@ This is the same feature as Sublime Text's `Selection > Expand Selection to Word
 
 ![demo](README/demo-expand-selection.gif)
 
+UPDATE! After creating this, I found that Xcode already has this feature. 😅 🙈 It is in the menu "Find > Select Next Occurance (opt + cmd + E)".
+
 #### Limitations
 
 - Not yet working with a selection that spans across multiple lines.
