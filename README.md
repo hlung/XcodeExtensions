@@ -17,7 +17,8 @@ This command uses the selected text to expand selection to the next occurance of
 
 This is the same feature as Sublime Text's `Selection > Expand Selection to Word` (cmd+D) command.
 
-**UPDATE!** After creating this, I found that Xcode already has this feature. 😅 🙈 It is in the menu "Find > Select Next Occurance (opt + cmd + E)".
+**UPDATE!** After creating this, I found that Xcode already has this feature. 😅 🙈 
+It is in the menu "Find > Select Next Occurance (opt + cmd + E)".
 
 ![demo](README/demo-expand-selection.gif)
 
